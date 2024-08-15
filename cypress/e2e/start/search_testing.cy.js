@@ -26,14 +26,16 @@ describe('Search function works', () => {
         
         cy.get('.ProductItem__Image')
           .should('exist')
-          .and('be.visible')
+          .and('be.visible');
         
         cy.get('.ProductItem__Title')
           .first()
           .find('a')
           .should('exist')
           .and('be.visible')
-          .and('have.attr', 'href')
+          .and('have.attr', 'href');
+         
+        cy.contains('Smart Padlock Bluetooth')
 
           //Homework:
 
@@ -55,6 +57,7 @@ describe('Search function works', () => {
           .first()
           .should('exist')
           .and('be.visible')
+        
 
           //View all Button
         cy.get(':nth-child(1) > .Segment > .Segment__Title > .Link')
