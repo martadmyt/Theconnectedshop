@@ -16,6 +16,25 @@ describe('the connected shop', () => {
       .should('exist')
       .and('be.visible');
 
+      //Check the image gallery
+      
+    cy.get('.Product__Slideshow')
+      .should('exist')
+      .and('be.visible');
+
+      //Check media
+      
+    cy.get('#Media33976616485105 > .AspectRatio > .Image--fadeIn')
+      .should('exist')
+      .and('be.visible');
+
+      //Check slider points
+
+    cy.get('.Product__SlideshowNav')
+      .should('exist')
+      .and('be.visible');
+    
+
     cy.get('.ProductMeta > .jdgm-widget > .jdgm-prev-badge > .jdgm-prev-badge__stars')
       .should('exist')
       .and('be.visible')
