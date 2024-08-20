@@ -28,7 +28,8 @@ describe('the connected shop', () => {
     cy.get('.CollectionFilters > :nth-child(1) > .Collapsible__Button')
       .should('exist')
       .and('be.visible')
-      .and('have.attr', 'type', 'button');
+      .and('have.attr', 'type', 'button')
+      .and('have.text', 'Lock Features');
 
       //Check filter options:
 

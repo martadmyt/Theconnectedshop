@@ -16,13 +16,14 @@ describe('Search function works', () => {
         cy.get('.Search__Input')
           .click()
           .type('Smart Padlock Bluetooth')
+          .should('have.value', 'Smart Padlock Bluetooth');
 
         cy.get(':nth-child(1) > .Segment > .Segment__Title > .Text--subdued')
-          .should('exist')
+          .should('exist');
 
         cy.get('.ProductItem__Wrapper')
           .should('exist')
-          .and('be.visible')
+          .and('be.visible');
         
         cy.get('.ProductItem__Image')
           .should('exist')
